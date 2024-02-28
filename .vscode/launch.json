@@ -1,0 +1,17 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+
+      {
+        "type": "pwa-node",
+        "request": "launch",
+        "name": "Launch TypeScript Program",
+        "program": "${workspaceFolder}/src/App.tsx", // Update the path to your main TypeScript file
+        "preLaunchTask": "tsc: build - tsconfig.json", // This compiles TS files using your tsconfig.json
+        "outFiles": ["${workspaceFolder}/dist/**/*.js"], // Adjust this path to where your JS files are output
+        "runtimeArgs": ["-r", "ts-node/register"], // Required for ts-node to run TypeScript files directly
+        "skipFiles": ["<node_internals>/**"]
+      }
+    ]
+  }
+  

@@ -1,0 +1,3 @@
+.fullHeightLayout {
+    min-height: 100vh; /* Make the layout fill the full viewport height */
+  }
